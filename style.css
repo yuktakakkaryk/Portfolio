@@ -108,7 +108,7 @@ body{
     transition: 0.4s;
 }
 
-.projects a:hover{
+.projects .btn:hover{
     background-color: black;
     color: white;
 }
