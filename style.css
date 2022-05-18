@@ -123,8 +123,11 @@ body{
 }
 
 @media screen and (max-width: 992px){
-    nav .container button{
+    /* nav .container button{
         background-color: white;
+    } */
+    .homepage{
+        height: 400px ;
     }
 }
 
@@ -154,6 +157,7 @@ body{
 
 @media screen and (max-width: 510px) {
     .homepage{
+        height: 400px;
         background-position: 600px;
     }
     
@@ -173,13 +177,13 @@ body{
         background-position: 500px;
     }
     
-    .home-text{
+    /* .home-text{
         background-color: white;
         opacity: 0.8;
         padding: 10px;
         border-radius: 10px;
         margin-top: 230px;
-    }
+    } */
 
     .text1, .text3{
         font-size: 15px;
@@ -187,13 +191,14 @@ body{
     }
     
     .text2{
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 400;
     }
 }
 
 @media screen and (max-width: 420px) {
     .homepage{
+        height: 300px ;
         background-position: 450px;
     }
 }
@@ -203,8 +208,18 @@ body{
         background-position: 350px;
     }
 
-    .home-text{
+    /* .home-text{
         text-align: center;
+    } */
+
+    .text1, .text3{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+    .text2{
+        font-size: 20px;
+        font-weight: 400;
     }
 }
 
