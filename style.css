@@ -127,6 +127,19 @@ body{
     height: 300px;
 }
 
+@media screen and (max-width: 1200px){
+    .contact .left h1{
+        font-size: 30px;
+    }
+    .contact .left p{
+        font-size: 15px;
+    }
+
+    .contact .right span, a{
+        font-size: 13px;
+    }
+}
+
 @media screen and (max-width: 992px){
     nav .container button{
         background-color: white;
@@ -199,6 +212,17 @@ body{
         font-size: 30px;
         font-weight: 400;
     }
+
+    .contact .right span, a{
+        font-size: 11px;
+    }
+
+    .contact .right i{
+        font-size: 11px;
+        padding: 7px;
+    }
+
+    
 }
 
 @media screen and (max-width: 420px) {
