@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: linear-gradient(#FFF6EA, #FFFFFF);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -12,40 +12,40 @@ body{
 }
 
 /* Top-nav */
-.top-nav-details{
+.top-nav-details {
     font-size: 12px;
     padding: 5px 0;
 }
 
-.top-nav-details a{
+.top-nav-details a {
     color: black;
 }
 
 @media screen and (max-width: 780px) {
-    .top-nav{
+    .top-nav {
         display: none;
     }
 }
 
 /* Nav-bar */
-.nav-bar{
+.nav-bar {
     background-color: black;
     font-size: 15px;
 }
 
-.nav-bar ul a{
+.nav-bar ul a {
     /* color: white !important; */
     transition: all 0.2s ease-in-out;
 }
 
-.nav-bar ul a:hover{
+.nav-bar ul a:hover {
     color: black !important;
     background-color: white;
     border-radius: 4px;
 }
 
 /* Homepage */
-.homepage{
+.homepage {
     /* background: url("./img/background.png"); */
     background: url("./img/bg.png");
     background-position: center;
@@ -56,24 +56,19 @@ body{
     justify-content: center;
 }
 
-.text1, .text3{
+.text1,
+.text3 {
     font-size: 30px;
     font-weight: 400;
 }
 
-.text2{
+.text2 {
     font-size: 70px;
     font-weight: 400;
 }
 
-/* .home-text{
-    padding-top: 10%
-} */
-
-
-
 /* About */
-.about a{
+.about .links {
     text-decoration: none;
     background-color: white;
     border: 2px solid black;
@@ -83,21 +78,21 @@ body{
     transition: 0.4s;
 }
 
-.about a:hover{
+.about .links:hover {
     background-color: black;
     color: white;
 }
 
-.section-margin{
+.section-margin {
     margin: 50px 0
 }
 
 /* Projects */
-.projects img{
+.projects img {
     height: 150px;
 }
 
-.projects .btn{
+.projects .btn {
     text-decoration: none;
     background-color: white;
     border: 2px solid black;
@@ -108,168 +103,233 @@ body{
     transition: 0.4s;
 }
 
-.projects .btn:hover{
+.projects .btn:hover,
+.projects .btn2:hover,
+.projects .btn3:hover{
     background-color: black;
     color: white;
 }
 
-.link{
+.projects .btn2, .btn3 {
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    width: 15%;
+    transition: 0.4s;
+    margin: 0;
+    position: relative;
+    left: 43%;
+}
+
+.projects .btn3{
+    display: none;
+}
+
+.project{
+    display: none;
+}
+
+.link {
     margin-top: 10px;
     font-size: 13px;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 /* Misc */
-.misc .misc-group{
+.misc .misc-group {
     background-color: white;
 }
 
-.misc img{
+.misc img {
     height: 300px;
 }
 
-@media screen and (max-width: 1200px){
-    .contact .left h1{
+@media screen and (max-width: 1200px) {
+    .contact .left h1 {
         font-size: 30px;
     }
-    .contact .left p{
+
+    .contact .left p {
         font-size: 15px;
     }
 
-    .contact .right span, a{
+    .contact .right span,
+    a {
         font-size: 13px;
     }
 }
 
-@media screen and (max-width: 992px){
-    nav .container button{
+@media screen and (max-width: 992px) {
+    nav .container button {
         background-color: white;
     }
-    .homepage{
-        height: 400px ;
+
+    .homepage {
+        height: 400px;
+    }
+
+    .buttons{
+        width: 100%;
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 800px){
-    .text1, .text3{
+@media screen and (max-width: 800px) {
+
+    .text1,
+    .text3 {
         font-size: 25px;
         font-weight: 400;
     }
-    
-    .text2{
+
+    .text2 {
         font-size: 60px;
         font-weight: 400;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .text1, .text3{
+
+    .text1,
+    .text3 {
         font-size: 20px;
         font-weight: 400;
     }
-    
-    .text2{
+
+    .text2 {
         font-size: 50px;
         font-weight: 400;
     }
+
+    .buttons{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .buttons{
+        font-size: 9px;
+    }    
 }
 
 @media screen and (max-width: 510px) {
-    .homepage{
+    .homepage {
         height: 400px;
         background-position: 600px;
     }
-    
-    .text1, .text3{
+
+    .text1,
+    .text3 {
         font-size: 15px;
         font-weight: 400;
     }
-    
-    .text2{
+
+    .text2 {
         font-size: 40px;
         font-weight: 400;
     }
 }
 
+@media screen and (max-width: 495px){
+    .buttons{
+        font-size: 9px;
+    }    
+}
+
 @media screen and (max-width: 480px) {
-    .homepage{
+    .homepage {
         background-position: 500px;
     }
-    
-    /* .home-text{
-        background-color: white;
-        opacity: 0.8;
-        padding: 10px;
-        border-radius: 10px;
-        margin-top: 230px;
-    } */
 
-    .text1, .text3{
+    .text1,
+    .text3 {
         font-size: 15px;
         font-weight: 400;
     }
-    
-    .text2{
+
+    .text2 {
         font-size: 30px;
         font-weight: 400;
     }
 
-    .contact .right span, a{
+    .contact .right span,
+    a {
         font-size: 11px;
     }
 
-    .contact .right i{
+    .contact .right i {
         font-size: 11px;
         padding: 7px;
     }
 
-    
+
 }
 
 @media screen and (max-width: 420px) {
-    .homepage{
-        height: 300px ;
+    .homepage {
+        height: 300px;
         background-position: 450px;
     }
 }
 
 @media screen and (max-width: 350px) {
-    .homepage{
+    .homepage {
         background-position: 350px;
     }
-
-    /* .home-text{
-        text-align: center;
-    } */
-
-    .text1, .text3{
+    
+    .text1,
+    .text3 {
         font-size: 12px;
         font-weight: 400;
     }
-    
-    .text2{
+
+    .text2 {
         font-size: 20px;
         font-weight: 400;
     }
 }
 
 @media screen and (max-width: 315px) {
-    .homepage{
+    .homepage {
         background-position: 320px;
     }
 }
 
 /* Contact */
-.contact .fa{
+.contact .fa {
     color: white;
     background-color: black;
     padding: 15px;
     border-radius: 30px;
 }
 
-hr{
+hr {
     visibility: hidden;
 }
 
-.contact a{
+.contact a {
     color: black;
+}
+
+.bullet{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.skills h5{
+    display: inline-block;
+}
+
+.card-text{
+    font-size: 13px;
+}
+
+.list{
+    font-weight: 500;
 }
