@@ -1,9 +1,9 @@
-var typed = new Typed('.auto-type', {
-    strings: ["Developer.", "UI Designer."],
-    typeSpeed: 120,
-    backSpeed: 120,
-    loop: true
-})
+// var typed = new Typed('.auto-type', {
+//     strings: ["Developer.", "UI Designer."],
+//     typeSpeed: 120,
+//     backSpeed: 120,
+//     loop: true
+// })
 
 $('document').ready(()=>{
     $('.project').slice(0,3).show();
