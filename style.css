@@ -5,20 +5,47 @@ html {
 }
 
 body {
-    background: linear-gradient(#FFF6EA, #FFFFFF);
+    /* background: linear-gradient(#E1F0DA, #ffffff) !important; */
+    background-color: #f3eeea !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Poppins", sans-serif !important;
 }
 
+.allHeadings{
+    color: #685648;
+    font-size: 40px;
+}
+
+.allDescriptions{
+    color: #685648;
+    font-size: 18px;
+}
+
+.subHeadings{
+    color: #685648;
+    font-size: 25px;
+}
+
+.subDescriptions{
+    color: #685648;
+    font-size: 15px;
+}
+
 /* Top-nav */
+.top-nav{
+    background-color: black;
+}
+
 .top-nav-details {
-    font-size: 12px;
-    padding: 5px 0;
+    font-size: 30px;
+    
 }
 
 .top-nav-details a {
-    color: black;
+    color: #685648;
+    padding: 30px 0;
+    margin: 0 50px;
 }
 
 @media screen and (max-width: 780px) {
@@ -27,59 +54,86 @@ body {
     }
 }
 
+.navbar-brand{
+    color: #685648 !important;
+}
+
 /* Nav-bar */
 .nav-bar {
-    background-color: black;
+    background-color: #f3eeea;
     font-size: 15px;
 }
 
 .nav-bar ul a {
-    /* color: white !important; */
+    color: #685648 !important;
     transition: all 0.2s ease-in-out;
+    font-weight: 500;
 }
 
 .nav-bar ul a:hover {
-    color: black !important;
-    background-color: white;
+    color: white !important;
+    background-color: #685648;
     border-radius: 4px;
 }
 
 /* Homepage */
-.homepage {
+/* .homepage { */
     /* background: url("./img/background.png"); */
-    background: url("./img/bg.png");
-    background-position: center;
+    /* background: url("./img/bg.png"); */
+    /* background-position: center;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.text1,
-.text3 {
-    font-size: 30px;
+.text1, .text3 {
+    color: #685648;
+    font-size: 20px;
     font-weight: 400;
 }
 
 .text2 {
+    color: #685648;
     font-size: 70px;
     font-weight: 400;
+}
+
+.text4{
+    color: rgba(104,86,72,0.75);
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.centered-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 85vh;
+    /* border: 1px solid black; */
+  }
+
+.text-container {
+    /* height: 80vh; */
+    margin: 0px 95px;
+    /* text-align: center; */
+    /* border: 1px solid black; */
 }
 
 /* About */
 .about .links {
     text-decoration: none;
-    background-color: white;
-    border: 2px solid black;
+    background-color: #f3eeea;
+    border: 2px solid #685648;
     padding: 10px;
     border-radius: 5px;
-    color: black;
+    color: #685648;
     transition: 0.4s;
 }
 
 .about .links:hover {
-    background-color: black;
+    background-color: #685648;
     color: white;
 }
 
@@ -94,11 +148,11 @@ body {
 
 .projects .btn {
     text-decoration: none;
-    background-color: white;
-    border: 2px solid black;
+    background-color: #f3eeea;
+    border: 2px solid #685648;
     padding: 10px;
     border-radius: 5px;
-    color: black;
+    color: #685648;
     width: 100%;
     transition: 0.4s;
 }
@@ -106,17 +160,17 @@ body {
 .projects .btn:hover,
 .projects .btn2:hover,
 .projects .btn3:hover{
-    background-color: black;
+    background-color: #685648;
     color: white;
 }
 
 .projects .btn2, .btn3 {
     text-decoration: none;
-    background-color: white;
-    border: 2px solid black;
+    background-color: #f3eeea;
+    border: 2px solid #685648;
     padding: 10px;
     border-radius: 5px;
-    color: black;
+    color: #685648;
     width: 15%;
     transition: 0.4s;
     margin: 0;
@@ -278,9 +332,10 @@ body {
     }
 }
 
-@media screen and (max-width: 350px) {
-    .homepage {
-        background-position: 350px;
+@media screen and (max-width: 1000px) {
+
+    .fa{
+        visibility: hidden;
     }
     
     .text1,
@@ -293,6 +348,10 @@ body {
         font-size: 20px;
         font-weight: 400;
     }
+
+    .text4{
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 315px) {
@@ -303,18 +362,27 @@ body {
 
 /* Contact */
 .contact .fa {
-    color: white;
-    background-color: black;
+    color: #f3eeea;
+    background-color: #685648;
     padding: 15px;
     border-radius: 30px;
 }
+
+.contact .fa {
+    color: #f3eeea;
+    background-color: #685648;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
 
 hr {
     visibility: hidden;
 }
 
 .contact a {
-    color: black;
+    color: #685648;
 }
 
 .bullet{
@@ -333,3 +401,53 @@ hr {
 .list{
     font-weight: 500;
 }
+
+.companyDetails{
+    color: #685648;
+    font-size: 13px;
+    line-height: 0%;
+    font-style: italic;
+}
+
+.card-text-weight{
+    font-weight: 350;
+}
+
+
+
+/* .centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+  }
+  
+  .corner-blob {
+    width: 700px;
+    height: 600px;
+    text-align: center;
+    padding: 20px;
+    background-color: #294B29;
+    border-radius: 60% 40% 30% 70% / 60% 70% 30% 40%;
+    display: inline-flex;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  @keyframes animate{
+    0%, 100%{
+        border-radius: 60% 40% 30% 70% / 60% 70% 30% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }  */
