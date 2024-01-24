@@ -413,6 +413,10 @@ hr {
     font-weight: 350;
 }
 
+.card-img-top {
+    object-fit: cover;
+    height: 100%;
+}
 
 
 /* .centered-container {
